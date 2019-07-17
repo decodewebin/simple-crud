@@ -15,4 +15,9 @@ class Country extends Model
 
         return $country->id;
     }
+
+    public static function getCountries()
+    {
+        return self::get();
+    }
 }

@@ -23,3 +23,4 @@ Route::get('/add-country', 'Country\CountryController@viewAddCountry')->name('vi
 Route::get('/add-state', 'State\StateController@viewAddState')->name('view.add.state');
 
 Route::post('/create-country', 'Country\CountryController@addCountry')->name('create.country');
+Route::post('/create-state', 'State\StateController@addState')->name('create.state');
