@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/add-country', 'Country\CountryController@viewAddCountry')->name('view.add.country');
 Route::get('/add-state', 'State\StateController@viewAddState')->name('view.add.state');
+
+Route::post('/create-country', 'Country\CountryController@addCountry')->name('create.country');
